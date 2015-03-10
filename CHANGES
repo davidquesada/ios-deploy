@@ -1,0 +1,6 @@
+Changes from phonegap/ios-deploy:
+
+in read_dir():
+  - If the call to afc_read_directory fails with error AFC_E_READ_ERROR,
+    the function assumes that they are actually files, and will invoke
+    the callback as such.
